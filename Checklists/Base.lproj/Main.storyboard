@@ -98,13 +98,14 @@
                                 <action selector="cancel" destination="djV-LO-QrW" id="FDu-b1-3A2"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="EL3-Sn-3kA">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" style="done" systemItem="done" id="EL3-Sn-3kA">
                             <connections>
                                 <action selector="done" destination="djV-LO-QrW" id="ZdM-Kq-FUd"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="doneBarButton" destination="EL3-Sn-3kA" id="3oD-1N-OU5"/>
                         <outlet property="textField" destination="1wx-NC-nN0" id="hcR-gD-WYW"/>
                     </connections>
                 </tableViewController>
@@ -146,7 +147,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jK3-PG-Yg5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1941.5999999999999" y="139.880059970015"/>
+            <point key="canvasLocation" x="1945" y="140"/>
         </scene>
     </scenes>
 </document>
