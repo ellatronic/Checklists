@@ -44,7 +44,7 @@
                     <navigationItem key="navigationItem" title="Checklists" id="pXh-fE-sft" userLabel="Checklists">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="KZi-vN-0Kn">
                             <connections>
-                                <segue destination="pC6-Yt-S1x" kind="presentation" id="vDw-Gm-tMu"/>
+                                <segue destination="pC6-Yt-S1x" kind="presentation" identifier="AddItem" id="vDw-Gm-tMu"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -79,6 +79,7 @@
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                     <connections>
                                                         <action selector="done" destination="djV-LO-QrW" eventType="editingDidEndOnExit" id="HFg-pF-G43"/>
+                                                        <outlet property="delegate" destination="djV-LO-QrW" id="2N4-RS-hPj"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -105,13 +106,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="doneBarButton" destination="EL3-Sn-3kA" id="3oD-1N-OU5"/>
+                        <outlet property="doneBarButton" destination="EL3-Sn-3kA" id="KQB-9j-wG5"/>
                         <outlet property="textField" destination="1wx-NC-nN0" id="hcR-gD-WYW"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5JG-Eh-jFp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2880.8000000000002" y="139.880059970015"/>
+            <point key="canvasLocation" x="3727" y="140"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GHW-FB-nTp">
