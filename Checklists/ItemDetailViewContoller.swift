@@ -9,17 +9,17 @@
 import Foundation
 import UIKit
 
-protocol AddItemViewControllerDelegate: class {
-    func addItemViewControllerDidCancel(_ controller: AddItemViewController)
-    func addItemViewController(_ controller: AddItemViewController, didFinishAdding item: ChecklistItem)
-    func addItemViewController(_ controller: AddItemViewController, didFinishEditing item: ChecklistItem)
+protocol ItemDetailViewControllerDelegate: class {
+    func addItemViewControllerDidCancel(_ controller: ItemDetailViewController)
+    func addItemViewController(_ controller: ItemDetailViewController, didFinishAdding item: ChecklistItem)
+    func addItemViewController(_ controller: ItemDetailViewController, didFinishEditing item: ChecklistItem)
 }
 
-class AddItemViewController: UITableViewController, UITextFieldDelegate {
+class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var doneBarButton: UIBarButtonItem!
     
-    weak var delegate: AddItemViewControllerDelegate?
+    weak var delegate: ItemDetailViewControllerDelegate?
     var itemToEdit: ChecklistItem?
     
     @IBAction func cancel() {
