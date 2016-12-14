@@ -4,7 +4,7 @@
 //
 //  Created by Ella on 10/18/16.
 //  Copyright © 2016 Ellatronic. All rights reserved.
-//
+//  Artwork/images/designs: from iOS Apprentice book, available at www.raywenderlich.com
 
 import UIKit
 
